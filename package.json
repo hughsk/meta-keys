@@ -1,0 +1,43 @@
+{
+  "name": "meta-keys",
+  "version": "1.0.0",
+  "description": "Get the state of any pressed meta keys, differentiating between their left/right location on the keyboard",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo demo.js",
+    "test": "standard --global KeyboardEvent"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "budo": "^4.0.0",
+    "standard": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/meta-keys.git"
+  },
+  "keywords": [
+    "left",
+    "right",
+    "meta",
+    "ctrl",
+    "control",
+    "option",
+    "alt",
+    "command",
+    "cmd",
+    "key",
+    "keyboard",
+    "ui"
+  ],
+  "homepage": "https://github.com/hughsk/meta-keys",
+  "bugs": {
+    "url": "https://github.com/hughsk/meta-keys/issues"
+  }
+}
