@@ -16,7 +16,7 @@ var names = {
 
 module.exports = MetaKeys
 
-function MetaKeys (target) {
+function MetaKeys (target, capture) {
   var state = {
     shift: [false, false],
     meta: [false, false],
@@ -31,8 +31,8 @@ function MetaKeys (target) {
   }
 
   target = target || window
-  target.addEventListener('keydown', keydown, false)
-  target.addEventListener('keyup', keyup, false)
+  target.addEventListener('keydown', keydown, capture || false)
+  target.addEventListener('keyup', keyup, capture || false)
 
   document.addEventListener('visibilitychange', reset, false)
 

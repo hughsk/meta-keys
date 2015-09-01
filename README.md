@@ -10,7 +10,7 @@ Get the state of any pressed meta keys, differentiating between their left/right
 
 [![NPM](https://nodei.co/npm/meta-keys.png)](https://nodei.co/npm/meta-keys/)
 
-### `keys = MetaKeys([element])`
+### `keys = MetaKeys([element], [capture])`
 
 Creates a new instance of `meta-keys`, listening to keyboard events fired on `element`. If `element` is not supplied, `window` will be used.
 
@@ -25,6 +25,14 @@ setInterval(function () {
     console.log('Right shift key is down')
   }
 }, 1000)
+```
+
+Optionally, you may pass `capture` as `true` to catch keyboard events before
+they're caught and disabled by any other scripts. For example, this is required
+in [Atom](http://atom.io/):
+
+``` javascript
+const atomMeta = require('meta-keys')(null, true)
 ```
 
 ### `keys.shift`
