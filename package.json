@@ -1,6 +1,6 @@
 {
   "name": "meta-keys",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get the state of any pressed meta keys, differentiating between their left/right location on the keyboard",
   "main": "index.js",
   "license": "MIT",
